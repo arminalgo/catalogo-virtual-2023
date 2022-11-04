@@ -1,50 +1,53 @@
-  
-/*----------------------*/
-/*-------- FONTS -------*/
-/*----------------------*/
-
 @font-face {
-	font-family: rotoplasregular;
-	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_regular.otf');
-}
-@font-face {
-	font-family: rotoplasbold;
-    src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_bold.otf');
-}
-@font-face {
-	font-family: rotoplaslight;
-	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_light.otf');
-}
-@font-face {
-	font-family: rotoplasregularttf;
-	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_regular.ttf');
-}
-@font-face {
-	font-family: rotoplasboldttf;
-    src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_bold.ttf');
-}
-@font-face {
-	font-family: rotoplaslightttf;
-	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_light.ttf');
+    font-family: 'rotoplasbold';
+    src: url('fonts/rotoplas-bold-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "rotoplas";
-    src: url(fonts/rotoplas_regular.otf);
+    font-family: 'rotoplasbold_italic';
+    src: url('fonts/rotoplas-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "rotoplasbold";
-    src: url(fonts/rotoplas_bold.otf);
+    font-family: 'rotoplaslight';
+    src: url('fonts/rotoplas-light-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "rotoplaslight";
-    src: url(fonts/rotoplas_light.otf);
+    font-family: 'rotoplaslight_italic';
+    src: url('fonts/rotoplas-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas_regularregular';
+    src: url('fonts/rotoplas-regular-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplasregular_italic';
+    src: url('fonts/rotoplas-regularitalic-webfont.woff2') format('woff2'),
+         url('fonts/rotoplas-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-family: rotoplas;
+    font-family: rotoplas!important;
     background-color: #e7e7e7;
     color: #16263A;
     margin: 0px;
