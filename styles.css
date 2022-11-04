@@ -168,10 +168,28 @@ h2{
    margin-top: 20px;
 }
 
+.dropdown-menu {
+    text-align: center!important;
+    border: 1px solid #009cde!important;
+    border-radius: 10px!important;
+}
+
+.dropdown-item {
+    color: #009cde!important;
+}
+
 
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav {
     align-items: center;
+}
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 15px;
+    text-align: center;
+    color: #009cde!important;
 }
 }
 
