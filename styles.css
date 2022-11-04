@@ -1,0 +1,208 @@
+  
+/*----------------------*/
+/*-------- FONTS -------*/
+/*----------------------*/
+
+@font-face {
+	font-family: rotoplasregular;
+	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_regular.otf');
+}
+@font-face {
+	font-family: rotoplasbold;
+    src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_bold.otf');
+}
+@font-face {
+	font-family: rotoplaslight;
+	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_light.otf');
+}
+@font-face {
+	font-family: rotoplasregularttf;
+	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_regular.ttf');
+}
+@font-face {
+	font-family: rotoplasboldttf;
+    src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_bold.ttf');
+}
+@font-face {
+	font-family: rotoplaslightttf;
+	src: url('https://capacitacion.rotoplas.com/rtp_resources/fonts/rotoplas_light.ttf');
+}
+
+@font-face {
+    font-family: "rotoplas";
+    src: url(fonts/rotoplas_regular.otf);
+}
+
+@font-face {
+    font-family: "rotoplasbold";
+    src: url(fonts/rotoplas_bold.otf);
+}
+
+@font-face {
+    font-family: "rotoplaslight";
+    src: url(fonts/rotoplas_light.otf);
+}
+
+body {
+    font-family: rotoplas;
+    background-color: #e7e7e7;
+    color: #16263A;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.logo-rtp {
+	width: 150px;
+}
+
+
+.informacion {
+	display: block;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #002554;
+}
+
+
+#renderproduct {
+	width: 60%;
+	min-width: 600px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+.contenido{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.contenido p {
+    margin-bottom: 0;
+}
+
+canvas {
+    position: fixed;
+    top: 1px;
+    z-index: -10;
+}
+
+
+
+
+.fsxl{
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.fsl{
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.fsm{
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.primary{
+    color: #009cde;
+}
+
+
+#body-contenedor {
+    top: 100px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #ffffffa1;
+    backdrop-filter: blur(10px) saturate(1.5);
+    z-index: 1000;
+    position: absolute;
+    width: 30%;
+}
+
+hr{
+    border: none;
+    border-bottom: solid thin #fff;
+}
+
+a{
+    color: #16263A;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bg-light {
+  backdrop-filter: blur(10px);
+}
+
+h1{
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h2{
+   font-size: 18px; 
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
+}
+
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    position: absolute!important;
+    right: 50px!important;
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    #body-contenedor {
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
+        background: #ffffffa1;
+        backdrop-filter: blur(10px) saturate(1.5);
+        z-index: 1000;
+        display: block;
+        width: 90%;
+        position: relative;
+    }
+
+    canvas {
+        position: relative;
+        top: 1px;
+        z-index: -10;
+        height: 70vh!important;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+}
+
