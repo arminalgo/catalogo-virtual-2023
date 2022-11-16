@@ -86,11 +86,11 @@ renderCalls.push(function(){
 
 const loader = new THREE.GLTFLoader();
 loader.crossOrigin = true;
-loader.load( '../assets/almacenamientotolvas.glb', function ( data ) { /////// Model
+loader.load( '../assets/almacenamientotanquesnodriza.glb', function ( data ) { /////// Model
 const object = data.scene;
-  object.position.set(0, -1.7, 0); /////////////Position
+  object.position.set(0, -1.2, 0); /////////////Position
   object.scale.set(0.025,0.025,0.025);  /////////////Scale
-  object.rotation.set(0,-2,0);
+  object.rotation.set(0,-0.3,0);
     scene.add( object );
 });
 </script>
@@ -149,7 +149,7 @@ const object = data.scene;
   }
   //
   (async function() {
-    const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=1447983960&single=true&output=tsv";
+    const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=669938233&single=true&output=tsv";
     try {
       // obetenemos la data
       var data = await getPapaparser(carrusel)
