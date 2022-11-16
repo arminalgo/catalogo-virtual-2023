@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'rotoplasbold';
     src: url('fonts/rotoplas-bold-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-bold-webfont.woff') format('woff');
+        url('fonts/rotoplas-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'rotoplasbold_italic';
     src: url('fonts/rotoplas-bolditalic-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-bolditalic-webfont.woff') format('woff');
+        url('fonts/rotoplas-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'rotoplaslight';
     src: url('fonts/rotoplas-light-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-light-webfont.woff') format('woff');
+        url('fonts/rotoplas-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'rotoplaslight_italic';
     src: url('fonts/rotoplas-lightitalic-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-lightitalic-webfont.woff') format('woff');
+        url('fonts/rotoplas-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 @font-face {
     font-family: 'rotoplas_regularregular';
     src: url('fonts/rotoplas-regular-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-regular-webfont.woff') format('woff');
+        url('fonts/rotoplas-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,13 +41,13 @@
 @font-face {
     font-family: 'rotoplasregular_italic';
     src: url('fonts/rotoplas-regularitalic-webfont.woff2') format('woff2'),
-         url('fonts/rotoplas-regularitalic-webfont.woff') format('woff');
+        url('fonts/rotoplas-regularitalic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: rotoplas!important;
+    font-family: rotoplas !important;
     background-color: #e7e7e7;
     color: #16263A;
     margin: 0px;
@@ -57,30 +57,30 @@ body {
 }
 
 .logo-rtp {
-	width: 150px;
+    width: 150px;
 }
 
 
 .informacion {
-	display: block;
-	margin-top: 10px;
-	cursor: pointer;
-	color: #002554;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #002554;
 }
 
 
 #renderproduct {
-	width: 60%;
-	min-width: 600px;
-	display: inline-block;
-	vertical-align: middle;
+    width: 60%;
+    min-width: 600px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .title {
     margin-top: 30px;
 }
 
-.contenido{
+.contenido {
     margin: 15px 0px;
     display: flex;
     flex-direction: row;
@@ -100,26 +100,23 @@ canvas {
     z-index: -10;
 }
 
-
-
-
-.fsxl{
+.fsxl {
     font-size: 40px;
     line-height: 45px;
 }
 
-.fsl{
+.fsl {
     font-size: 30px;
     line-height: 35px;
 }
 
-.fsm{
+.fsm {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 20px;
 }
 
-.primary{
+.primary {
     color: #009cde;
 }
 
@@ -137,55 +134,55 @@ canvas {
 }
 
 #body-contenedor.w-buttons {
-    top: 160px!important;
+    top: 160px !important;
 }
 
-hr{
+hr {
     border: none;
     border-bottom: solid thin #fff;
 }
 
-a{
+a {
     color: #16263A;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 .bg-light {
-  backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
-h1{
+h1 {
     padding-left: 15px;
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 20px;
 }
 
-h2{
-   font-size: 18px; 
-   margin-bottom: 20px;
-   margin-top: 20px;
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .dropdown-menu {
-    text-align: center!important;
-    border: 1px solid #009cde!important;
-    border-radius: 10px!important;
+    text-align: center !important;
+    border: 1px solid #009cde !important;
+    border-radius: 10px !important;
 }
 
 .dropdown-item {
-    color: #009cde!important;
+    color: #009cde !important;
 }
 
 
 .basic-button {
     background: #f5f5f5;
-    border:2px solid #009cde;
+    border: 2px solid #009cde;
     color: #002554;
     width: fit-content;
     padding: 8px 15px;
@@ -212,26 +209,26 @@ h2{
     cursor: default;
 }
 
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav {
-    align-items: center;
-}
-}
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    margin-left: 15px;
-    text-align: center;
-    color: #009cde!important;
-}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
 }
 
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-    position: absolute!important;
-    right: 50px!important;
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 15px;
+        text-align: center;
+        color: #009cde !important;
+    }
 }
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        position: absolute !important;
+        right: 50px !important;
+    }
 }
 
 
@@ -253,9 +250,9 @@ h2{
         position: relative;
         top: 1px;
         z-index: -10;
-        height: 70vh!important;
+        height: 70vh !important;
         object-fit: cover;
         object-position: top;
     }
-    
+
 }

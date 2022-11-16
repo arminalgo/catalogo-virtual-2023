@@ -98,31 +98,29 @@
 
         const loader = new THREE.GLTFLoader();
         loader.crossOrigin = true;
-        loader.load('../assets/conduccionvalvulaesfera.glb', function (data) { /////// Model
+        loader.load('../assets/conducciontuboplus.glb', function (data) { /////// Model
             const object = data.scene;
-            object.position.set(1, -0.2, 0); /////////////Position
-            object.scale.set(0.06, 0.06, 0.06);  /////////////Scale
+            object.position.set(0, -0.8, 0); /////////////Position
+            object.scale.set(0.016, 0.016, 0.016);  /////////////Scale
             object.rotation.set(0, 0, 0);
             scene.add(object);
         });
     </script>
 
     <section>
-        <a href="../valvula-angular">
-            <div class="basic-button"> Válvula Angular </div>
+        <a href="../tuboplus-hidraulico">
+            <div class="basic-button"> Tuboplus Hidráulico </div>
         </a>
-        <a href="../valvula-globo">
-            <div class="basic-button"> Válvula Globo </div>
+        <a href="../tuboplus-aire-acondicionado">
+            <div class="basic-button"> Aire Acondicionado </div>
         </a>
-        <div class="basic-button selected"> Válvula Esfera </div>
+        <div class="basic-button selected"> Contra Incendio </div>
+
 
         <div class="w-buttons" id="body-contenedor">
-
             <p class="fsm primary" id="titulo"> </p>
-
             <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Características</div>
             <div class="informacion block-toggle" id="caracteristicas" style="display: none;">
-
             </div>
 
             <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Capacidades </div>
@@ -169,7 +167,7 @@
         }
         //
         (async function () {
-            const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=1245796866&single=true&output=tsv";
+            const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=510941214&single=true&output=tsv";
             try {
                 // obetenemos la data
                 var data = await getPapaparser(carrusel)
