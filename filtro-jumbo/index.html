@@ -108,30 +108,42 @@
     </script>
 
     <section>
-        <a href="../filtro-estandar/">
-            <div class="basic-button "> Filtro Estándar </div>
-        </a>
-        <div class="basic-button selected"> Filtro Jumbo </div>
 
-        <div class="w-buttons" id="body-contenedor">
-            <p class="fsm primary" id="titulo"> </p>
-            <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Características</div>
-            <div class="informacion block-toggle" id="caracteristicas" style="display: none;">
+        <div id="body-contenedor">
+
+            <div class="basic-button"
+                style="margin: 0px;display: flex;flex-direction: row;align-content: center;justify-content: space-between;align-items: center;padding: 10px 15px;"
+                id="info-ver">
+                <p class="fsm" id="titulo" style="margin-right: 20px;margin-bottom: 0px;"> </p>
+                <p id="toggle-text" style="margin: 0px;">Ver Información</p>
             </div>
 
-            <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Capacidades </div>
-            <div class="informacion block-toggle" id="capacidades" style="display: none;">
 
-            </div>
+            <div class="info" style="display: none;">
+                <div class="informacion title"> Características</div>
+                <div class="informacion block-toggle" id="caracteristicas">
 
-            <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Beneficios </div>
-            <div class="informacion block-toggle" id="beneficios" style="display: none;">
+                </div>
 
-            </div>
+                <div class="informacion title"> Capacidades </div>
+                <div class="informacion block-toggle" id="capacidades">
 
-            <div class="informacion title"> <i class="fa fa-chevron-down" aria-hidden="true"></i> Relacionados </div>
-            <div class="informacion block-toggle" id="relacionados" style="display: none;">
+                </div>
 
+                <div class="informacion title"> Beneficios </div>
+                <div class="informacion block-toggle" id="beneficios">
+
+                </div>
+
+                <div class="informacion title"> Relacionados </div>
+                <div class="informacion block-toggle" id="relacionados">
+
+                </div>
+
+                <div>
+                    <a href="#body-contenedor" class="basic-button"
+                        style="text-align: center;margin-top: 20px;margin-left: 0px;"> Volver arriba </a>
+                </div>
             </div>
 
         </div>
@@ -243,14 +255,24 @@
         includeHTML();
     </script>
 
-    <script>
+<script>
 
-        $('#body-contenedor div').click(function () {
-            $(this).next('.block-toggle').slideToggle('500');
-            $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
-        });
+    $('#body-contenedor div').click(function () {
+        $(this).next('.info').slideToggle('500');
+    });
 
-    </script>
+</script>
+
+<script>
+
+    $(document).ready(function () {
+        $("#info-ver").click(function () {
+            $("#toggle-text").fadeOut(function () {
+                $("#toggle-text").text(($("#toggle-text").text() == 'Ocultar Información') ? 'Ver Información' : 'Ocultar Información').fadeIn(200);
+            })
+        })
+    });
+</script>
 
 
 
