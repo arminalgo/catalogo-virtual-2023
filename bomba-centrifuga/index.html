@@ -98,11 +98,11 @@
 
         const loader = new THREE.GLTFLoader();
         loader.crossOrigin = true;
-        loader.load('../assets/conduccionvalvulaangular.glb', function (data) { /////// Model
+        loader.load('../assets/conduccionbombacentrifuga.glb', function (data) { /////// Model
             const object = data.scene;
-            object.position.set(0, -0.2, 0); /////////////Position
-            object.scale.set(0.01, 0.01, 0.01);  /////////////Scale
-            object.rotation.set(0, -0.3, 0);
+            object.position.set(0, -1, 0); /////////////Position
+            object.scale.set(0.015, 0.015, 0.015);  /////////////Scale
+            object.rotation.set(.3, -0.3, 0);
             scene.add(object);
         });
     </script>
@@ -151,12 +151,12 @@
 
     <section>
         <div class="related">
-            <div class="basic-button selected"> Válvula Angular </div>
-            <a href="../valvula-globo">
-                <div class="basic-button"> Válvula Globo </div>
+            <a href="../bomba-periferica">
+                <div class="basic-button "> Bomba Periférica </div>
             </a>
-            <a href="../valvula-esfera">
-                <div class="basic-button"> Válvula Esfera </div>
+                <div class="basic-button selected"> Bomba Centrífuga </div>
+            <a href="../bomba-sumergible">
+                <div class="basic-button"> Bomba Sumergible </div>
             </a>
         </div>
     </section>
@@ -186,7 +186,7 @@
         }
         //
         (async function () {
-            const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=673058282&single=true&output=tsv";
+            const carrusel = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT-payxwVM2UMMsWwIFhnKELWlUTEXaNKlP2QumgMgtngIAwbO8OQhw3p9m75j06oqUPoveTUNd2SkJ/pub?gid=723448690&single=true&output=tsv";
             try {
                 // obetenemos la data
                 var data = await getPapaparser(carrusel)
