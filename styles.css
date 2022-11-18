@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'rotoplasbold';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-bold-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-bold-webfont.woff') format('woff');
     font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'rotoplasbold_italic';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-bolditalic-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-bolditalic-webfont.woff') format('woff');
     font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'rotoplaslight';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-light-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-light-webfont.woff') format('woff');
     font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'rotoplaslight_italic';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-lightitalic-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-lightitalic-webfont.woff') format('woff');
     font-weight: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'rotoplas_regularregular';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-regular-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'rotoplasregular_italic';
+    font-family: 'rotoplas';
     src: url('fonts/rotoplas-regularitalic-webfont.woff2') format('woff2'),
         url('fonts/rotoplas-regularitalic-webfont.woff') format('woff');
     font-weight: normal;
