@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-bold-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-bolditalic-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-light-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-lightitalic-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-regular-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rotoplas';
+    src: url('fonts/rotoplas-regularitalic-webfont.woff2') format('woff2'),
+        url('fonts/rotoplas-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: rotoplas !important;
+    background-color: #e7e7e7;
+    color: #16263A;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.logo-rtp {
+    width: 150px;
+}
+
+
+
+.informacion {
+    display: flex;
+    margin-top: 10px;
+    cursor: default;
+    color: #002554;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.info {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #002554;
+}
+
+
+#renderproduct {
+    width: 60%;
+    min-width: 600px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    font-size: 25px;
+    color: #009cde;
+    margin-top: 30px;
+}
+
+.contenido {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 45%;
+}
+
+@media only screen and (max-width: 400px){
+    .contenido {
+        width: 100%;
+    }
+}
+
+.contenido p {
+    margin-bottom: 0;
+}
+
+canvas {
+    position: fixed;
+    top: 1px;
+    z-index: -10;
+}
+
+.fsxl {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.fsl {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.fsm {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.primary {
+    color: #009cde;
+}
+
+.primary:hover {
+    color: #FFFFFF;
+}
+
+
+#body-contenedor {
+    top: 0px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    background: #ffffffa1;
+    backdrop-filter: blur(10px) saturate(1.5);
+    z-index: 1;
+    position: relative;
+    width: 55%;
+}
+
+hr {
+    border: none;
+    border-bottom: solid thin #fff;
+}
+
+a {
+    color: #16263A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bg-light {
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    padding-left: 15px;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dropdown-menu {
+    text-align: center !important;
+    border: 1px solid #009cde !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-item {
+    color: #009cde !important;
+}
+
+
+.basic-button {
+    background: #f5f5f5;
+    border: 2px solid #009cde;
+    color: #002554;
+    width: fit-content;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.basic-button:hover {
+    background: #009cde;
+    color: #f5f5f5;
+}
+
+.selected.basic-button {
+    background: #009cde;
+    color: #f5f5f5;
+    width: fit-content;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    cursor: default;
+}
+
+.navbar{
+    z-index: 100;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 15px;
+        text-align: center;
+        color: #009cde !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #body-contenedor {
+        margin: auto;
+        padding: 15px;
+        border-radius: 10px;
+        background: #ffffffa1;
+        backdrop-filter: blur(10px) saturate(1.5);
+        z-index: 1000;
+        display: block;
+        width: 90%;
+        position: relative;
+    }
+
+    canvas {
+        position: fixed;
+        top: 1px;
+        z-index: -10;
+        height: 100vh !important;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+.related{
+    position: fixed;
+    bottom: 10px;
+}
+
+#video{
+    position: absolute;
+    z-index: -10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0px;
+}
+
+.navbar-rtp{
+    position: absolute;
+    right: 50px;
+}
+
+@media (max-width: 992px) {
+    .navbar-rtp{
+        position: relative;
+        right: 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    .family-selector{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    }
+}
